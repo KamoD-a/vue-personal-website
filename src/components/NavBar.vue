@@ -24,7 +24,7 @@
 
 <script>export default {
     watch: {
-        '$route' (){
+        '$route'() {
             this.showMobileMenu = false
         }
     },
@@ -52,7 +52,7 @@
     padding: 20px 30px;
     width: 80%;
     margin-bottom: 4rem;
-    margin-top: 1rem ;
+    margin-top: 1rem;
 }
 
 .nav-items {
@@ -61,10 +61,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    padding: 0.5rem;
     ;
 
     .nav-button {
-        padding: 5px;
         margin: 3rem;
         border-radius: 10px;
         text-align: center;
@@ -96,7 +96,7 @@ i {
 
 // Mobile version - hidden hamburger menu@media screen and (max-width: 768px)
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
     .nav-menu {
         padding-top: 10px;
         position: absolute;
@@ -148,7 +148,7 @@ i {
         width: 110%;
     }
 
-    i.hamburger-icon{
+    i.hamburger-icon {
         width: 50%;
     }
 
