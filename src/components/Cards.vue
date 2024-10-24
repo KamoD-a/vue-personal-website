@@ -1,11 +1,11 @@
 <template>
     <div class="main-container">
         <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
-            <a :href="projectData.ProjectsArray[index].Link">
+
                 <img :src="projectData.ProjectsArray[index].Image" alt="">
                 <h2>{{ projectData.ProjectsArray[index].Title }}</h2>
                 <p>{{ projectData.ProjectsArray[index].About }}</p>
-            </a>
+                <a :href="projectData.ProjectsArray[index].Link"></a>
         </div>
     </div>
 </template>
@@ -22,10 +22,6 @@ export default {
 </script>
 
 
-
-
-
-
 <style scoped>
 
 .main-container{
@@ -39,7 +35,7 @@ export default {
 .project-card {
     margin: 1%;;
     flex-wrap: 0 0 40%;
-    background-color: rgb(227, 227, 227);
+    background-color: aquamarine;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
     padding: 15px;
@@ -47,9 +43,5 @@ export default {
 
 .project-card img{
     height: 5rem;
-}
-
-.project-card a{
-    color: black;
 }
 </style>
