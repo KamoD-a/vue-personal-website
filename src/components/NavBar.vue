@@ -117,7 +117,7 @@ i {
         z-index: 100;
         position: absolute;
         transition: all 0.2s ease-out;
-        margin-top: 10%;
+        margin-top: 15%;
         width: 100%;
     }
 
@@ -125,7 +125,7 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(222, 222, 222);
+        background-color: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
     }
 
