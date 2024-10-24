@@ -14,7 +14,6 @@
                     <RouterLink to="/about" class="nav-button">About</RouterLink>
                 </ul>
             </div>
-
             <i class="hamburger-icon" @click="showMenu()">
                 <img class="hamburger-icon" src="../assets/hamburger-icon.png" alt="icon">
             </i>
@@ -52,6 +51,8 @@
     justify-content: right;
     padding: 20px 30px;
     width: 80%;
+    margin-bottom: 4rem;
+    margin-top: 1rem ;
 }
 
 .nav-items {
@@ -64,7 +65,7 @@
 
     .nav-button {
         padding: 5px;
-        margin: 5px;
+        margin: 3rem;
         border-radius: 10px;
         text-align: center;
         text-decoration: none;
@@ -85,6 +86,8 @@ i {
     width: 32%;
     align-items: center;
     justify-items: center;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
 }
 
 .logo-icon {
