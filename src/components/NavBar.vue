@@ -6,12 +6,12 @@
             </div>
             <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
                 <ul class="nav-items">
-                    <li>Home</li>
-                    <li>Art</li>
-                    <li>Tech</li>
-                    <li>Illustration</li>
-                    <li>Writing</li>
-                    <li>About</li>
+                    <RouterLink to="/" class="nav-button" @click="goToHome">Home</RouterLink>
+                    <RouterLink to="/art" class="nav-button" @click="goToArt">Art</RouterLink>
+                    <RouterLink to="/tech" class="nav-button" @click="goToTech">Tech</RouterLink>
+                    <RouterLink to="/illustration" class="nav-button" @click="goToIllustration">Illustration</RouterLink>
+                    <RouterLink to="/writings" class="nav-button" @click="goToWriting">Writings</RouterLink>
+                    <RouterLink to="/about" class="nav-button" @click="goToAbout">About</RouterLink>
                 </ul>
             </div>
             <i class="fas fa-bars" @click="showMenu()">
@@ -56,14 +56,16 @@
     padding: 0;
     ;
 
-    li {
+    .nav-button {
         padding: 5px;
         margin: 5px;
         border-radius: 10px;
         text-align: center;
+        text-decoration: none;
+        color: black;
     }
 
-    li:hover {
+    .nav-button:hover {
         background-color: rgb(178, 190, 190);
     }
 }
@@ -109,6 +111,7 @@ i {
         position: absolute;
         transition: all 0.2s ease-out;
         margin-top: 10%;
+        width: 100%;
     }
 
     .nav-items {

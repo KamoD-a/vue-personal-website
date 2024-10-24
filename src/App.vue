@@ -1,23 +1,24 @@
 <template>
   <NavBar/>
-  <SlideShow/>
-  
+    <main>
+      <RouterView />
+  </main>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
-import SlideShow from './components/SlideShow.vue';
 
 export default {
   name: 'App',
   components: {
-    NavBar,
-    SlideShow
+    NavBar
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '~@/../mdb/scss/index.free.scss';
+
 #app {
   font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
