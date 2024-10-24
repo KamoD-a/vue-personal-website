@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <i class="fas fa-bars" @click="showMenu()">
-                <img class="hamburger-icon" src="../assets/hamburger-icon.png" alt="icon">
+                <!--<img class="hamburger-icon" src="../assets/hamburger-icon.png" alt="icon">-->
             </i>
 
         </div>
