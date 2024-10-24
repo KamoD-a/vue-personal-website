@@ -11,6 +11,7 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.1.5",
     "core-js": "^3.8.3",
+    "mdb-vue-ui-kit": "^6.0.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
