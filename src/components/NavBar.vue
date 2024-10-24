@@ -6,12 +6,12 @@
             </div>
             <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
                 <ul class="nav-items">
-                    <RouterLink to="/" class="nav-button" @click="goToHome">Home</RouterLink>
-                    <RouterLink to="/art" class="nav-button" @click="goToArt">Art</RouterLink>
-                    <RouterLink to="/tech" class="nav-button" @click="goToTech">Tech</RouterLink>
-                    <RouterLink to="/illustration" class="nav-button" @click="goToIllustration">Illustration</RouterLink>
-                    <RouterLink to="/writings" class="nav-button" @click="goToWriting">Writings</RouterLink>
-                    <RouterLink to="/about" class="nav-button" @click="goToAbout">About</RouterLink>
+                    <RouterLink to="/" class="nav-button">Home</RouterLink>
+                    <RouterLink to="/art" class="nav-button">Art</RouterLink>
+                    <RouterLink to="/tech" class="nav-button">Tech</RouterLink>
+                    <RouterLink to="/illustration" class="nav-button">Illustration</RouterLink>
+                    <RouterLink to="/writings" class="nav-button">Writings</RouterLink>
+                    <RouterLink to="/about" class="nav-button">About</RouterLink>
                 </ul>
             </div>
 
