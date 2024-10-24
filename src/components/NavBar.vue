@@ -14,8 +14,9 @@
                     <RouterLink to="/about" class="nav-button" @click="goToAbout">About</RouterLink>
                 </ul>
             </div>
-            <i class="fas fa-bars" @click="showMenu()">
-                <!--<img class="hamburger-icon" src="../assets/hamburger-icon.png" alt="icon">-->
+
+            <i class="hamburger-icon" @click="showMenu()">
+                <img class="hamburger-icon" src="../assets/hamburger-icon.png" alt="icon">
             </i>
 
         </div>
@@ -23,6 +24,11 @@
 </template>
 
 <script>export default {
+    watch: {
+        '$route' (){
+            this.showMobileMenu = false
+        }
+    },
     data() {
         return {
             showMobileMenu: false,
@@ -63,6 +69,7 @@
         text-align: center;
         text-decoration: none;
         color: black;
+        font-size: 2.2rem;
     }
 
     .nav-button:hover {
@@ -126,22 +133,22 @@ i {
         display: block;
         text-align: right;
         padding: 0 10px 10px 0;
+        size: 10%;
     }
 
     .logo {
-        width: 50%;
+        width: 60%;
     }
 
     .logo-icon {
-        width: 100%;
+        margin: 1rem;
+        width: 110%;
     }
 
-    .hamburger-icon {
-        width: 20%;
-    }
-
-    i.fas.fa-bars {
+    i.hamburger-icon{
         width: 50%;
     }
+
+
 }
 </style>
